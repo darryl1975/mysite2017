@@ -126,7 +126,7 @@ padding: 5px;
 
 /* === Form Header === */
 .contact_form h2 {
-	margin:0;
+	margin: auto;
 	display: inline;
 }
 .required_notification {

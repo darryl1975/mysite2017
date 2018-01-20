@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8"> <!-- Used to declare the charset-->
+    <title>My First HTML5 Main Page</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper" >  <!-- The wrapper tag includes the closing 'content' div tag -->
+        <header>
+            <h1>Welcome!</h1>
+        </header>
+        <nav>
+            <a href="#article1">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#article2">Experience</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#article3">Beliefs</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">Contact</a>
+        </nav> 
+        <article>
+            <form class="contact_form" action="#" method="post" name="contact_form">
+                    <ul>
+                        <li>
+                                <h2>Contact Us</h2>
+                                <span class="required_notification">* Denotes Required Field</span>
+                        </li>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text"  placeholder="Darryl Ng" required />
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="darryl@COMworks.com" required />
+                            <span class="form_hint">Proper format "name@something.com"</span>
+                        </li>
+                        <li>
+                            <label for="website">Website:</label>
+                            <input type="url" name="website" placeholder="http://darryl.com" required pattern="(http|https)://.+"/>
+                            <span class="form_hint">Proper format "http://someaddress.com"</span>
+                        </li>
+                        <li>
+                            <label for="message">Message:</label>
+                            <textarea name="message" cols="40" rows="6" required ></textarea>
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Submit Form</button>
+                        </li>
+                    </ul>
+                </form>
+        </article>
+        <aside>
+            <h3>Mobile App Services from COMworks</h3>
+            <ul>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Rates</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Mobile Development questionnaire</a></li>
+            </ul>
+            <p>
+                COMworks offers professional mobile app development services for your company or institution.
+                If you are interested in getting a mobile app developed but are too busy running your day-to-day business affairs to develop the app yourself, let us do it for you at COMworks. Just give us the gist of what you want the app to do, the points you'd like to cover regarding your company or product and we'll present your app in a clear, persuasive and interesting way.        
+            </p>
+            <br>
+            <p>
+                Contact us with your requirements for custom mobile app services from COMworks.
+            </p>
+        </aside> 
+        <div id="footer" >
+                Copyright &copy; 2017 COMworks
+        </div>
+    </div>
+  </body>
+</html>
